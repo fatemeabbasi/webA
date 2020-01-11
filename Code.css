@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto", sans-serif;
+    background-image: url(bg.jpeg);
+}
+a{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+section{
+	padding: 10rem 0;
+	
+
+}
+.heading{
+	text-transform: uppercase;
+	font-size: 10rem;
+	letter-spacing: 3px;
+	margin-right: -3px;
+	margin-bottom: 5rem;
+	text-align: center;
+	position: relative;
+	color: #fff;
+}
+
+
+
+
+.card-wapper{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+
+}
+.card{
+
+	width: 32rem;
+	background-color: #ebeef8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+	box-shadow: -5rem -5rem 3rem rgba (0,0,0,0,2);
+
+}
+
+.card .card-img{
+	width: 100%;
+	height: 26rem;
+	object-fit: cover;
+	-webkit-clip-path: polygon( 0 0, 100% 0, 100% 78%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.profile-image{
+	width: 15rem;
+	height: 15rem;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: -11rem;
+	z-index: 999;
+	border: 1rem solid #ebeef8;
+}
+.card h1{
+	font-size: 2.5rem;
+	color: #333;
+	margin: 1.5rem 0;
+}
+
+.job-title{
+	font-size: 1.5rem;
+	color: #777;
+	font-weight: 300;
+}
+.about{
+	font-size: 1.5rem;
+	color: #333;
+	margin: 1.5rem 0;
+	font-style: italic;
+	text-align: center;
+}
+.card .btn{
+	padding: 1rem 2.5rem ;
+	background-color:  #ff3333;
+	border-radius: 2rem;
+	margin: 1rem 0;
+	text-transform: uppercase;
+	color: #eee;
+	font-size: 1.4rem;
+}
+.card .btn:hover{
+	transform: translateY(-2px);
+	box-shadow: -5rem -5rem 2rem rgba(0,0,0,.2); 
+}
+.card .btn:active{
+	transform: translateY(0);
+	box-shadow: none; 
+}
+
+@media screen and (min-width: 700px){
+	.card-wapper{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+
+	}
+	.card{
+		margin: 2rem;
+	}
+
+}
+
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.card:nth-child(1){
+		animation: fadeIn .5s .5s backwards;
+}
+.card:nth-child(2){
+		animation: fadeIn .5s 1s backwards;
+}
+.card:nth-child(3){
+		animation: fadeIn .5s 1.5s backwards;
+}
+
+/*
+@keyframes fadeIn{
+    from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+	.heading:nth-child(1){
+		animation: fadeIn .5s .5s backwards;
+	}
+	.heading:nth-child(2){
+		animation: fadeIn .5s 1s backwards;
+	}
+    .heading:nth-child(3){
+		animation: fadeIn .5s 1.5s backwards;
+	}
+	*/
+
+/*
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+	.heading:nth-child(1){
+		animation: fadeIn .5s .5s backwards;
+	}
+	.heading:nth-child(2){
+		animation: fadeIn .5s .1s backwards;
+	}
+    .heading:nth-child(3){
+		animation: fadeIn .5s 1.5s backwards;
+	}
+}
+*/
